@@ -258,8 +258,27 @@
             <label for="phone">Phone</label>
             <input type="tel" id="phone" name="phone" required>
 
-            Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
-            Travel Time (Fall, Winter, Spring, Summer, Flexible)
+            <fieldset>
+                <label for=""destination">Destination</label>
+                <select id="destination" name="destination">
+                    <option value="barcelona">Barcelona</option>
+                    <option value="granada">Granada</option>
+                    <option value="ibiza">Ibiza</option>
+                    <option value="madrid">Madrid</option>
+                    <option value="majorca">Majorca</option>
+                    <option value="seville">Seville</option>
+                    <option value="tenerife">Tenerife</option>
+                    <option value="valencia">Valencia</option>
+                </select>
+                <label for="travel-time">Travel Time</label>
+                <select id="travel-time" name="travel-time">
+                    <option value="fall">Fall</option>
+                    <option value="winter">Winter</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="flexible">Flexible</option>
+            </fieldset>
+            <input type="submit" value="Submit">
         </form>
     </section>
 </main>
