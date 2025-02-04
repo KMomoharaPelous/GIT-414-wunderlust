@@ -205,7 +205,7 @@
 
         <p>Size: 1,405 miles squared</p>
         <br />
-        Elevation
+        <h3>Elevation</h3>
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-top-bar" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
         <line x1="12" y1="21" x2="12" y2="3" />
@@ -213,17 +213,17 @@
         <line x1="9" y1="21" x2="15" y2="21" />
         </svg>
 
-        Elevation: 4,741 feet
+        <p>Elevation: 4,741 feet</p>
         <br />
-        Location
+        <h3>Location</h3>
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
         <circle cx="12" cy="11" r="3" />
         <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
         </svg>
-        Location: Mediterranean 
+        <p>Location: Mediterranean </p>
         <br />
-        Population
+        <h3>Population</h3>
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
         <circle cx="9" cy="7" r="4" />
@@ -232,27 +232,40 @@
         <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
         </svg>
 
-        Population: 923,608
+        <p>Population: 923,608</p>
         <br />
     </section>
 
-    Contact Us
-    First Name (Enter first name)
-    Last Name (Enter last name)
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+        <form action="POST" id="contact-form">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
 
-    Contact Method (Email, Text, Phone)
-    Email Address (Enter Email)
-    Phone Number (Enter telephone number)
+            <label for="contact-method">Preferred Contact Method</label>
+            <select id="contact-method" name="contact-method">
+                <option value="email">Email</option>
+                <option value="text">Text</option>
+                <option value="phone">Phone</option>
+            </select>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
 
-    Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
-    Travel Time (Fall, Winter, Spring, Summer, Flexible)
-    </main>
+            Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
+            Travel Time (Fall, Winter, Spring, Summer, Flexible)
+        </form>
+    </section>
+</main>
 
-    <footer>
-    Copyright 2021 Wunderlust
-    Privacy Statement
-    Terms of Service
-    </footer>
+<footer>
+Copyright 2021 Wunderlust
+Privacy Statement
+Terms of Service
+</footer>
 
 </body>
 </html>
